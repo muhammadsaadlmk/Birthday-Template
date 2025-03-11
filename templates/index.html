@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Arisha!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div id="countdown" class="section">
+            <p class="birth-date">Born on March 12, 2007</p>
+            <div class="countdown-container">
+                <div id="countdown-timer">10</div>
+            </div>
+        </div>
+
+        <div id="birthday-wish" class="section hidden">
+            <h1 class="wish-text">Happy 18th Birthday, Arisha Wattoo!</h1>
+            <div id="wish-paragraph" class="wish-paragraph hidden">
+                Happy Birthday! 🎉 On this special day, I hope you're surrounded by love, laughter, and all the things that bring you joy. May this year be filled with unforgettable moments, new adventures, and endless opportunities. You deserve all the happiness in the world, and I hope your heart is as full as your smile today. Here's to another year of amazing memories, growth, and success. Cheers to you and the wonderful person you are! Wishing you a fantastic birthday and an even brighter year ahead! 🎂🎁✨
+            </div>
+            <p class="from-text">From Sardar Ali Raza Wattoo</p>
+        </div>
+    </div>
+
+    <div id="animation-container">
+        <div id="confetti-container"></div>
+        <div id="balloon-container"></div>
+        <div id="hearts-container"></div>
+    </div>
+
+    <footer class="footer">
+        <p>Developed by SARDAR ALI RAZA WATTOO</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/animations.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/counter.js') }}"></script>
+</body>
+</html>
